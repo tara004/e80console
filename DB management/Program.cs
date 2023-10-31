@@ -1,9 +1,9 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
 
-string connectionString = "Data Source=(local);" +
+string connectionString = "Data Source=DESKTOP-N4139G5\\MSSQLSERVER01;" +
 "Initial Catalog=prenotazioni;Integrated Security=True";
-string queryString = "SELECT * FROM clienti WHERE id_cliente < 10";
+string queryString = "SELECT * FROM clienti WHERE id_cliente <= 10";
 SqlConnection connection;
 SqlCommand command;
 SqlDataReader reader;
