@@ -66,6 +66,17 @@
             this.giorni_permanenzaTextBox = new System.Windows.Forms.TextBox();
             this.costo_giornalieroTextBox = new System.Windows.Forms.TextBox();
             this.clienteTextBox = new System.Windows.Forms.TextBox();
+            this.prenotazioniDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             cameraLabel = new System.Windows.Forms.Label();
             arrivoLabel = new System.Windows.Forms.Label();
             partenzaLabel = new System.Windows.Forms.Label();
@@ -79,6 +90,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.prenotazioniBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prenotazioniBindingNavigator)).BeginInit();
             this.prenotazioniBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.prenotazioniDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // prenotazioniDataSet
@@ -231,7 +243,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(425, 12);
+            this.button1.Location = new System.Drawing.Point(385, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 39);
             this.button1.TabIndex = 2;
@@ -242,7 +254,7 @@
             // cameraLabel
             // 
             cameraLabel.AutoSize = true;
-            cameraLabel.Location = new System.Drawing.Point(57, 110);
+            cameraLabel.Location = new System.Drawing.Point(38, 118);
             cameraLabel.Name = "cameraLabel";
             cameraLabel.Size = new System.Drawing.Size(56, 16);
             cameraLabel.TabIndex = 2;
@@ -251,7 +263,7 @@
             // cameraTextBox
             // 
             this.cameraTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.prenotazioniBindingSource, "camera", true));
-            this.cameraTextBox.Location = new System.Drawing.Point(119, 107);
+            this.cameraTextBox.Location = new System.Drawing.Point(100, 115);
             this.cameraTextBox.Name = "cameraTextBox";
             this.cameraTextBox.Size = new System.Drawing.Size(100, 22);
             this.cameraTextBox.TabIndex = 3;
@@ -259,7 +271,7 @@
             // arrivoLabel
             // 
             arrivoLabel.AutoSize = true;
-            arrivoLabel.Location = new System.Drawing.Point(259, 122);
+            arrivoLabel.Location = new System.Drawing.Point(219, 119);
             arrivoLabel.Name = "arrivoLabel";
             arrivoLabel.Size = new System.Drawing.Size(44, 16);
             arrivoLabel.TabIndex = 4;
@@ -268,7 +280,7 @@
             // arrivoDateTimePicker
             // 
             this.arrivoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.prenotazioniBindingSource, "arrivo", true));
-            this.arrivoDateTimePicker.Location = new System.Drawing.Point(309, 118);
+            this.arrivoDateTimePicker.Location = new System.Drawing.Point(269, 115);
             this.arrivoDateTimePicker.Name = "arrivoDateTimePicker";
             this.arrivoDateTimePicker.Size = new System.Drawing.Size(200, 22);
             this.arrivoDateTimePicker.TabIndex = 5;
@@ -276,7 +288,7 @@
             // partenzaLabel
             // 
             partenzaLabel.AutoSize = true;
-            partenzaLabel.Location = new System.Drawing.Point(551, 130);
+            partenzaLabel.Location = new System.Drawing.Point(498, 116);
             partenzaLabel.Name = "partenzaLabel";
             partenzaLabel.Size = new System.Drawing.Size(62, 16);
             partenzaLabel.TabIndex = 6;
@@ -285,7 +297,7 @@
             // partenzaDateTimePicker
             // 
             this.partenzaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.prenotazioniBindingSource, "partenza", true));
-            this.partenzaDateTimePicker.Location = new System.Drawing.Point(619, 126);
+            this.partenzaDateTimePicker.Location = new System.Drawing.Point(566, 112);
             this.partenzaDateTimePicker.Name = "partenzaDateTimePicker";
             this.partenzaDateTimePicker.Size = new System.Drawing.Size(200, 22);
             this.partenzaDateTimePicker.TabIndex = 7;
@@ -293,7 +305,7 @@
             // importoLabel
             // 
             importoLabel.AutoSize = true;
-            importoLabel.Location = new System.Drawing.Point(886, 131);
+            importoLabel.Location = new System.Drawing.Point(786, 113);
             importoLabel.Name = "importoLabel";
             importoLabel.Size = new System.Drawing.Size(55, 16);
             importoLabel.TabIndex = 8;
@@ -302,7 +314,7 @@
             // importoTextBox
             // 
             this.importoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.prenotazioniBindingSource, "importo", true));
-            this.importoTextBox.Location = new System.Drawing.Point(947, 128);
+            this.importoTextBox.Location = new System.Drawing.Point(847, 110);
             this.importoTextBox.Name = "importoTextBox";
             this.importoTextBox.Size = new System.Drawing.Size(100, 22);
             this.importoTextBox.TabIndex = 9;
@@ -310,7 +322,7 @@
             // caparraLabel
             // 
             caparraLabel.AutoSize = true;
-            caparraLabel.Location = new System.Drawing.Point(1097, 143);
+            caparraLabel.Location = new System.Drawing.Point(958, 115);
             caparraLabel.Name = "caparraLabel";
             caparraLabel.Size = new System.Drawing.Size(57, 16);
             caparraLabel.TabIndex = 10;
@@ -319,7 +331,7 @@
             // caparraTextBox
             // 
             this.caparraTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.prenotazioniBindingSource, "caparra", true));
-            this.caparraTextBox.Location = new System.Drawing.Point(1160, 140);
+            this.caparraTextBox.Location = new System.Drawing.Point(1021, 112);
             this.caparraTextBox.Name = "caparraTextBox";
             this.caparraTextBox.Size = new System.Drawing.Size(100, 22);
             this.caparraTextBox.TabIndex = 11;
@@ -327,7 +339,7 @@
             // tipo_strutturaLabel
             // 
             tipo_strutturaLabel.AutoSize = true;
-            tipo_strutturaLabel.Location = new System.Drawing.Point(96, 178);
+            tipo_strutturaLabel.Location = new System.Drawing.Point(97, 192);
             tipo_strutturaLabel.Name = "tipo_strutturaLabel";
             tipo_strutturaLabel.Size = new System.Drawing.Size(81, 16);
             tipo_strutturaLabel.TabIndex = 12;
@@ -336,7 +348,7 @@
             // tipo_strutturaTextBox
             // 
             this.tipo_strutturaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.prenotazioniBindingSource, "tipo_struttura", true));
-            this.tipo_strutturaTextBox.Location = new System.Drawing.Point(183, 175);
+            this.tipo_strutturaTextBox.Location = new System.Drawing.Point(184, 189);
             this.tipo_strutturaTextBox.Name = "tipo_strutturaTextBox";
             this.tipo_strutturaTextBox.Size = new System.Drawing.Size(100, 22);
             this.tipo_strutturaTextBox.TabIndex = 13;
@@ -344,7 +356,7 @@
             // giorni_permanenzaLabel
             // 
             giorni_permanenzaLabel.AutoSize = true;
-            giorni_permanenzaLabel.Location = new System.Drawing.Point(360, 193);
+            giorni_permanenzaLabel.Location = new System.Drawing.Point(382, 189);
             giorni_permanenzaLabel.Name = "giorni_permanenzaLabel";
             giorni_permanenzaLabel.Size = new System.Drawing.Size(121, 16);
             giorni_permanenzaLabel.TabIndex = 14;
@@ -353,7 +365,7 @@
             // giorni_permanenzaTextBox
             // 
             this.giorni_permanenzaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.prenotazioniBindingSource, "giorni_permanenza", true));
-            this.giorni_permanenzaTextBox.Location = new System.Drawing.Point(487, 190);
+            this.giorni_permanenzaTextBox.Location = new System.Drawing.Point(509, 186);
             this.giorni_permanenzaTextBox.Name = "giorni_permanenzaTextBox";
             this.giorni_permanenzaTextBox.Size = new System.Drawing.Size(100, 22);
             this.giorni_permanenzaTextBox.TabIndex = 15;
@@ -361,7 +373,7 @@
             // costo_giornalieroLabel
             // 
             costo_giornalieroLabel.AutoSize = true;
-            costo_giornalieroLabel.Location = new System.Drawing.Point(674, 189);
+            costo_giornalieroLabel.Location = new System.Drawing.Point(664, 186);
             costo_giornalieroLabel.Name = "costo_giornalieroLabel";
             costo_giornalieroLabel.Size = new System.Drawing.Size(110, 16);
             costo_giornalieroLabel.TabIndex = 16;
@@ -370,7 +382,7 @@
             // costo_giornalieroTextBox
             // 
             this.costo_giornalieroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.prenotazioniBindingSource, "costo_giornaliero", true));
-            this.costo_giornalieroTextBox.Location = new System.Drawing.Point(790, 186);
+            this.costo_giornalieroTextBox.Location = new System.Drawing.Point(780, 183);
             this.costo_giornalieroTextBox.Name = "costo_giornalieroTextBox";
             this.costo_giornalieroTextBox.Size = new System.Drawing.Size(100, 22);
             this.costo_giornalieroTextBox.TabIndex = 17;
@@ -378,7 +390,7 @@
             // clienteLabel
             // 
             clienteLabel.AutoSize = true;
-            clienteLabel.Location = new System.Drawing.Point(1018, 223);
+            clienteLabel.Location = new System.Drawing.Point(949, 186);
             clienteLabel.Name = "clienteLabel";
             clienteLabel.Size = new System.Drawing.Size(49, 16);
             clienteLabel.TabIndex = 18;
@@ -387,16 +399,121 @@
             // clienteTextBox
             // 
             this.clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.prenotazioniBindingSource, "cliente", true));
-            this.clienteTextBox.Location = new System.Drawing.Point(1073, 220);
+            this.clienteTextBox.Location = new System.Drawing.Point(1004, 183);
             this.clienteTextBox.Name = "clienteTextBox";
             this.clienteTextBox.Size = new System.Drawing.Size(100, 22);
             this.clienteTextBox.TabIndex = 19;
+            // 
+            // prenotazioniDataGridView
+            // 
+            this.prenotazioniDataGridView.AutoGenerateColumns = false;
+            this.prenotazioniDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.prenotazioniDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10});
+            this.prenotazioniDataGridView.DataSource = this.prenotazioniBindingSource;
+            this.prenotazioniDataGridView.Location = new System.Drawing.Point(73, 249);
+            this.prenotazioniDataGridView.Name = "prenotazioniDataGridView";
+            this.prenotazioniDataGridView.RowHeadersWidth = 51;
+            this.prenotazioniDataGridView.RowTemplate.Height = 24;
+            this.prenotazioniDataGridView.Size = new System.Drawing.Size(1145, 220);
+            this.prenotazioniDataGridView.TabIndex = 20;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_prenotazione";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID_prenotazione";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "camera";
+            this.dataGridViewTextBoxColumn2.HeaderText = "camera";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "arrivo";
+            this.dataGridViewTextBoxColumn3.HeaderText = "arrivo";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "partenza";
+            this.dataGridViewTextBoxColumn4.HeaderText = "partenza";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "importo";
+            this.dataGridViewTextBoxColumn5.HeaderText = "importo";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "caparra";
+            this.dataGridViewTextBoxColumn6.HeaderText = "caparra";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "tipo_struttura";
+            this.dataGridViewTextBoxColumn7.HeaderText = "tipo_struttura";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "giorni_permanenza";
+            this.dataGridViewTextBoxColumn8.HeaderText = "giorni_permanenza";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "costo_giornaliero";
+            this.dataGridViewTextBoxColumn9.HeaderText = "costo_giornaliero";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "cliente";
+            this.dataGridViewTextBoxColumn10.HeaderText = "cliente";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Width = 125;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1306, 455);
+            this.ClientSize = new System.Drawing.Size(1306, 554);
+            this.Controls.Add(this.prenotazioniDataGridView);
             this.Controls.Add(clienteLabel);
             this.Controls.Add(this.clienteTextBox);
             this.Controls.Add(costo_giornalieroLabel);
@@ -425,6 +542,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.prenotazioniBindingNavigator)).EndInit();
             this.prenotazioniBindingNavigator.ResumeLayout(false);
             this.prenotazioniBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.prenotazioniDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -459,5 +577,16 @@
         private System.Windows.Forms.TextBox giorni_permanenzaTextBox;
         private System.Windows.Forms.TextBox costo_giornalieroTextBox;
         private System.Windows.Forms.TextBox clienteTextBox;
+        private System.Windows.Forms.DataGridView prenotazioniDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
     }
 }
