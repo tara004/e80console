@@ -16,7 +16,6 @@ b=Console.ReadLine();
 */
 
 Reservation r = new Reservation();
-ù
 dataTable = r.tuttiPrenotazioni();
 
 foreach (DataRow row in dataTable.Rows)
